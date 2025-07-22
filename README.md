@@ -122,10 +122,18 @@ Usaremos React Router para manejar las vistas.
 | `/expenses/:id/edit` | Editar un gasto existente (obligatoria)                   |
 | `/users`             | Lista de usuarios (opcional, útil para ver participantes) |
 
-![Inicio](./inicio.png){width=300px}
-![Detalles gasto](./detalles-gasto.png){width=300px}
-![Editar gasto](./editar-gasto.png){width=300px}
-![Nuevo gasto](./nuevo-gasto.png){width=300px}
+## Aquí están los ejemplos para inspirarte
+### Inicio
+<img src="./inicio.png" width="300" alt="Inicio" />
+
+### Detalles gasto
+<img src="./detalles-gasto.png" width="300" alt="Detalles gasto" />
+
+### Editar gasto
+<img src="./editar-gasto.png" width="300" alt="Editar gasto" />
+
+### Nuevo gasto
+<img src="./nuevo-gasto.png" width="300" alt="Nuevo gasto" />
 
 ### Lógica del reparto (cálculo de deudas)
 Cuando se registra un gasto:
