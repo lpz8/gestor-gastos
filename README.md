@@ -151,3 +151,158 @@ La lógica de estos cálculos se puede hacer:
 
 ⚠️ No hace falta crear una colección de "deudas":
 Las deudas pueden calcularse dinámicamente a partir de los gastos registrados.
+
+### Requisitos mínimos
+- CRUD completo de usuarios y gastos
+- Lógica de reparto entre participantes
+- Mostrar quién debe cuánto a quién
+- Navegación funcional entre páginas
+- Buen uso de fetch, estado y React Router
+
+### Recomendación de desarrollo
+- Crear primero el backend con endpoints funcionales y testear con Postman.
+- Crear componentes de React para cada vista.
+- Conectar el frontend con el backend (fetch o axios).
+- Añadir estilos y validaciones básicas.
+- Probar con varios usuarios y gastos reales para validar los cálculos.
+
+Aquí tienes las instrucciones del proyecto "Gestor de Gastos Compartidos" en formato Markdown:
+
+-----
+
+# Instrucciones paso a paso para el proyecto "Gestor de Gastos Compartidos"
+
+-----
+
+## Estructura del proyecto
+
+**IMPORTANTE:** El proyecto debe estar **dividido en dos repositorios independientes**:
+* Un repositorio para el **frontend (React)**
+* Un repositorio para el **backend (Node.js + Express)**
+
+❌ Si el frontend y el backend están en el mismo repositorio, el proyecto **NO se corregirá**.
+
+-----
+
+## Inicialización del proyecto
+### Backend (Node.js + Express + MongoDB)
+
+1. Crea una carpeta nueva y ejecuta:
+
+```bash
+npm init -y
+```
+
+2. Instala las dependencias necesarias:
+
+    ```bash
+    npm install express mongoose cors dotenv
+    ```
+
+3.  Crea un archivo `server.js` o `index.js` como punto de entrada.
+
+4.  Configura las rutas y controladores para los modelos `User` y `Expense`.
+
+5.  Usa `dotenv` para almacenar la conexión a MongoDB y el puerto:
+
+    ```env
+    PORT=4000
+    MONGO_URI=mongodb+srv://...
+    ```
+
+6.  Asegúrate de usar CORS correctamente para aceptar peticiones desde el frontend:
+
+    ```javascript
+    const cors = require('cors');
+    app.use(cors());
+    ```
+
+7.  Sube el backend a un repositorio en GitHub llamado `splitwise-back` (o similar).
+
+### Frontend (React + Vite)
+
+1.  Crea tu frontend con:
+
+    ```bash
+    npm create vite@latest
+    ```
+
+2.  Selecciona React como framework y JavaScript o TypeScript según tu preferencia.
+
+3.  Instala React Router:
+
+    ```bash
+    npm install react-router-dom
+    ```
+
+4.  Organiza las rutas en tu proyecto (gastos, usuarios, etc.).
+
+5.  Usa `fetch` o `axios` para conectarte con el backend.
+
+6.  Crea un archivo `.env` en el frontend:
+
+    ```env
+    VITE_BACKEND_URL=https://tu-api-en-render.com
+    ```
+
+7.  Sube el frontend a un repositorio en GitHub llamado `splitwise-front` (o similar).
+
+-----
+
+## Despliegue
+
+### Backend en Render
+
+1.  Crea un nuevo servicio web y conecta el repositorio del backend.
+
+2.  Añade tus variables de entorno en el panel de configuración (`PORT`, `MONGO_URI`, etc.).
+
+3.  Asegúrate de que Render use el comando de arranque correcto:
+
+    ```bash
+    node server.js
+    ```
+
+4.  Copia la URL del backend en producción (ejemplo: `https://splitwise-api.onrender.com`)
+
+### Frontend en Netlify
+
+1.  Sube tu frontend a GitHub y enlázalo con Netlify.
+2.  Asegúrate de configurar la variable `VITE_BACKEND_URL` en Netlify.
+3.  Netlify detectará Vite automáticamente y hará el build.
+4.  Copia la URL del frontend en producción (ejemplo: `https://splitwise.netlify.app`)
+
+-----
+
+## Entrega obligatoria
+
+Al final del proyecto deberás entregar:
+✅ Enlace al repositorio del backend
+✅ Enlace al repositorio del frontend
+✅ URL de producción del backend (Render)
+✅ URL de producción del frontend (Netlify)
+✅ Contenido de los archivos `.env` que hayas utilizado en ambos lados
+
+**Ejemplo:**
+
+```text
+Backend Repo: https://github.com/usuario/splitwise-back
+Frontend Repo: https://github.com/usuario/splitwise-front
+Backend Producción: https://splitwise-api.onrender.com
+Frontend Producción: https://splitwise.netlify.app
+
+.env BACKEND:
+PORT=4000
+MONGO_URI=mongodb+srv://...
+
+.env FRONTEND:
+VITE_BACKEND_URL=https://splitwise-api.onrender.com
+```
+
+-----
+
+## Recomendaciones
+
+  * 🧪 **Prueba siempre antes de subir:** crea usuarios, añade gastos, revisa los cálculos.
+  * 🧼 **Cuida la estructura de carpetas, el estilo visual y los mensajes de error.**
+  * 📋 **No olvides un `README.md` claro en cada repo** (instrucciones, dependencias, uso).
