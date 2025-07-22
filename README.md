@@ -189,9 +189,9 @@ Aquí tienes las instrucciones del proyecto "Gestor de Gastos Compartidos" en fo
 
 1. Crea una carpeta nueva y ejecuta:
 
-```bash
-npm init -y
-```
+    ```bash
+    npm init -y
+    ```
 
 2. Instala las dependencias necesarias:
 
@@ -277,11 +277,11 @@ npm init -y
 ## Entrega obligatoria
 
 Al final del proyecto deberás entregar:
-✅ Enlace al repositorio del backend
-✅ Enlace al repositorio del frontend
-✅ URL de producción del backend (Render)
-✅ URL de producción del frontend (Netlify)
-✅ Contenido de los archivos `.env` que hayas utilizado en ambos lados
+- ✅ Enlace al repositorio del backend
+- ✅ Enlace al repositorio del frontend
+- ✅ URL de producción del backend (Render)
+- ✅ URL de producción del frontend (Netlify)
+- ✅ Contenido de los archivos `.env` que hayas utilizado en ambos lados
 
 **Ejemplo:**
 
