@@ -3,7 +3,7 @@
 ## ¿Qué es esta aplicación?
 
 Esta aplicación permite registrar y repartir gastos entre varias personas. La idea es que un grupo de amigos, compañeros de piso, de viaje o de evento, pueda apuntar quién paga qué y entre quiénes se reparte.
-Aquí tenéis el ejemplo de la aplicación 
+Aquí el ejemplo en el que está basado [Splitwise](https://www.splitwise.com)
 
 Por ejemplo:
 > Ana paga una cena de 60€ entre ella, Juan y Luis.  
@@ -112,15 +112,20 @@ pero como Ana ya ha pagado 60€, Juan y Luis le deben 20€ cada uno.
 El frontend debe mostrar y permitir navegar entre las diferentes secciones de la aplicación.
 Usaremos React Router para manejar las vistas.
 
-### Páginas obligatorias
+### Páginas
 | Ruta                 | Descripción                                               |
 | -------------------- | --------------------------------------------------------- |
-| `/`                  | Página principal con resumen de deudas                    |
-| `/expenses`          | Listado completo de gastos registrados                    |
-| `/expenses/:id`      | Detalle de un gasto                                       |
-| `/expenses/new`      | Formulario para crear un nuevo gasto                      |
-| `/expenses/:id/edit` | Editar un gasto existente                                 |
+| `/`                  | Página principal con resumen de deudas (obligatoria)      |
+| `/expenses`          | Listado completo de gastos registrados (opcional)         |
+| `/expenses/:id`      | Detalle de un gasto (obligatoria)                         |
+| `/expenses/new`      | Formulario para crear un nuevo gasto (obligatoria)        |
+| `/expenses/:id/edit` | Editar un gasto existente (obligatoria)                   |
 | `/users`             | Lista de usuarios (opcional, útil para ver participantes) |
+
+![Inicio](./inicio.png)
+![Detalles gasto](./detalles-gasto.png)
+![Editar gasto](./editar-gasto.png)
+![Nuevo gasto](./nuevo-gasto.png)
 
 ### Lógica del reparto (cálculo de deudas)
 Cuando se registra un gasto:
