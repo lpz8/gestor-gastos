@@ -196,7 +196,7 @@ Las deudas pueden calcularse dinámicamente a partir de los gastos registrados.
 -----
 
 ## Inicialización del proyecto
-### Backend (Node.js + Express + MongoDB)
+### Backend (Node.js + Express + MongoDB) La base de datos estará en [Atlas](https://www.mongodb.com/products/platform/atlas-database) 
 
 1. Crea una carpeta nueva y ejecuta:
 
@@ -217,7 +217,7 @@ Las deudas pueden calcularse dinámicamente a partir de los gastos registrados.
 5.  Usa `dotenv` para almacenar la conexión a MongoDB y el puerto:
 
     ```env
-    PORT=4000
+    PORT=3000
     MONGO_URI=mongodb+srv://...
     ```
 
@@ -303,7 +303,7 @@ Backend Producción: https://splitwise-api.onrender.com
 Frontend Producción: https://splitwise.netlify.app
 
 .env BACKEND:
-PORT=4000
+PORT=3000
 MONGO_URI=mongodb+srv://...
 
 .env FRONTEND:
