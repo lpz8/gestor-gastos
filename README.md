@@ -179,8 +179,6 @@ Las deudas pueden calcularse dinámicamente a partir de los gastos registrados.
 - Añadir estilos y validaciones básicas.
 - Probar con varios usuarios y gastos reales para validar los cálculos.
 
-Aquí tienes las instrucciones del proyecto "Gestor de Gastos Compartidos" en formato Markdown:
-
 -----
 
 # Instrucciones paso a paso para el proyecto "Gestor de Gastos Compartidos"
